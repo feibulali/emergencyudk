@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：2023-11-11 20:33:10
+# 创建时间：2023-11-12 00:35:47
 # 使用模版：V2RaySE 默认模版
-# 节点数量：29
+# 节点数量：61
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -115,6 +115,38 @@ proxies:
   - {"name":"美国_欢迎订阅yui科技_75","type":"vmess","server":"142.4.98.232","port":443,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699624723213","headers":{"host":"www.12971475.xyz"}}}
   - {"name":"美国_欢迎订阅yui科技_4","type":"vmess","server":"198.2.193.152","port":30000,"cipher":"auto","uuid":"68d238ce-3ca1-46dc-b833-a0916c829ad3","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699624723213","headers":{"host":"www.28251658.xyz"}}}
   - {"name":"美国_欢迎订阅yui科技_84","type":"vmess","server":"156.225.67.155","port":30000,"cipher":"auto","uuid":"375e70f0-5d46-476f-8d69-0fb35c5548a9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699534876280","headers":{"host":"www.11302851.xyz"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_1","type":"vmess","server":"156.225.67.155","port":30000,"cipher":"auto","uuid":"375e70f0-5d46-476f-8d69-0fb35c5548a9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699534876280","headers":{"host":"www.11302851.xyz"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_2","type":"vmess","server":"tg_mfbpn_d4.52vpn.eu.org","port":11005,"cipher":"auto","uuid":"85db6652-a747-3a0a-a170-422736076410","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_3","type":"vmess","server":"112.29.94.23","port":49056,"cipher":"auto","uuid":"21a9bff2-72de-4e62-93ff-8b159f66d875","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_4","type":"trojan","server":"tg_mfbpn_d4.52vpn.eu.org","port":11008,"udp":true,"password":"85db6652-a747-3a0a-a170-422736076410","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_5","type":"ss","server":"hefei.chiguayun.shop","port":27132,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_6","type":"ss","server":"foshan.chiguayun.shop","port":27130,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_7","type":"ss","server":"foshan.chiguayun.shop","port":27108,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_8","type":"ss","server":"foshan.chiguayun.shop","port":27133,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_9","type":"ss","server":"hefei.chiguayun.shop","port":27135,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_10","type":"ss","server":"foshan.chiguayun.shop","port":27135,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_11","type":"vmess","server":"192.74.241.200","port":443,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699454116583","headers":{"host":"www.17144479.xyz"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_12","type":"vmess","server":"142.4.98.232","port":443,"cipher":"auto","uuid":"051b844f-efe3-4847-92aa-66b5de0b6d4e","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699624723213","headers":{"host":"www.12971475.xyz"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_13","type":"ss","server":"hefei.chiguayun.shop","port":27107,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_14","type":"trojan","server":"tg_mfbpn_d4.52vpn.eu.org","port":11015,"udp":true,"password":"85db6652-a747-3a0a-a170-422736076410","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_15","type":"vmess","server":"tg_mfbpn_d4.52vpn.eu.org","port":11011,"cipher":"auto","uuid":"85db6652-a747-3a0a-a170-422736076410","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国(yudou66.com 玉豆免费节点)_1","type":"vmess","server":"45.199.138.146","port":30000,"cipher":"auto","uuid":"4ec0ae62-de09-4029-904a-0313d4628ecf","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.19229362.xyz"}}}
+  - {"name":"美国(yudou66.com 玉豆免费节点)_2","type":"vmess","server":"8.222.198.105","port":80,"cipher":"auto","uuid":"ffffffff-ffff-ffff-ffff-ffffffffffff","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"warp.chigua.tk"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_16","type":"vmess","server":"95.164.61.27","port":80,"cipher":"auto","uuid":"73f51947-ce77-4d19-a652-467863492634","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"il1.xv2ray.net"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_17","type":"vmess","server":"tg_mfbpn_d4.52vpn.eu.org","port":11013,"cipher":"auto","uuid":"85db6652-a747-3a0a-a170-422736076410","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_18","type":"vless","server":"45.159.218.102","port":443,"uuid":"39603bab-377f-42eb-9ac4-3ccca64bec45","tls":true,"servername":"ws.ArV2ray.fun","network":"ws","ws-opts":{"path":"/","headers":{"host":"ws.ArV2ray.fun"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_19","type":"ss","server":"hefei.chiguayun.shop","port":27131,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_20","type":"ss","server":"bjcu.xzyunjiasu.icu","port":33952,"password":"5c8b210a-2f00-4292-964b-05281c7ad5d1","cipher":"aes-256-gcm"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_21","type":"ss","server":"hefei.chiguayun.shop","port":27133,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_22","type":"ss","server":"hefei.chiguayun.shop","port":27106,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"日本(yudou66.com 玉豆免费节点)","type":"trojan","server":"tg_mfbpn_d5.52vpn.eu.org","port":11025,"udp":true,"password":"85db6652-a747-3a0a-a170-422736076410","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_23","type":"trojan","server":"tg_mfbpn_d5.52vpn.eu.org","port":11023,"udp":true,"password":"85db6652-a747-3a0a-a170-422736076410","sni":"alibaba-node.cn","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_24","type":"vmess","server":"198.2.193.152","port":30000,"cipher":"auto","uuid":"68d238ce-3ca1-46dc-b833-a0916c829ad3","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699624723213","headers":{"host":"www.28251658.xyz"}}}
+  - {"name":"美国(玉豆免费节点 yudou66.com)_25","type":"ss","server":"foshan.chiguayun.shop","port":27105,"password":"8bad2fb3-96b7-4d99-a334-1615ce52d256","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸 _CN_中国->🇺🇸_US_美国","type":"ss","server":"bjcu.xzyunjiasu.icu","port":33952,"password":"5c8b210a-2f00-4292-964b-05281c7ad5d1","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸 _US_美国->🇳🇱_NL_荷兰_1","type":"vmess","server":"45.199.138.191","port":30000,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699280099138","headers":{"host":"www.42077230.xyz"}}}
+  - {"name":"🇺🇸 _US_美国->🇳🇱_NL_荷兰_2","type":"vmess","server":"45.199.138.146","port":30000,"cipher":"auto","uuid":"4ec0ae62-de09-4029-904a-0313d4628ecf","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699193100388","headers":{"host":"www.19229362.xyz"}}}
+  - {"name":"🇺🇸 _US_美国","type":"vmess","server":"156.225.67.155","port":30000,"cipher":"auto","uuid":"375e70f0-5d46-476f-8d69-0fb35c5548a9","alterId":64,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/path/1699534876280","headers":{"host":"www.11302851.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -150,6 +182,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -185,6 +249,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -220,6 +316,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: 📲 电报信息
     type: select
     proxies:
@@ -254,6 +382,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -288,6 +448,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -322,6 +514,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -373,6 +597,38 @@ proxy-groups:
       - 美国_欢迎订阅yui科技_75
       - 美国_欢迎订阅yui科技_4
       - 美国_欢迎订阅yui科技_84
+      - 美国(玉豆免费节点 yudou66.com)_1
+      - 美国(玉豆免费节点 yudou66.com)_2
+      - 美国(玉豆免费节点 yudou66.com)_3
+      - 美国(玉豆免费节点 yudou66.com)_4
+      - 美国(玉豆免费节点 yudou66.com)_5
+      - 美国(玉豆免费节点 yudou66.com)_6
+      - 美国(玉豆免费节点 yudou66.com)_7
+      - 美国(玉豆免费节点 yudou66.com)_8
+      - 美国(玉豆免费节点 yudou66.com)_9
+      - 美国(玉豆免费节点 yudou66.com)_10
+      - 美国(玉豆免费节点 yudou66.com)_11
+      - 美国(玉豆免费节点 yudou66.com)_12
+      - 美国(玉豆免费节点 yudou66.com)_13
+      - 美国(玉豆免费节点 yudou66.com)_14
+      - 美国(玉豆免费节点 yudou66.com)_15
+      - 美国(yudou66.com 玉豆免费节点)_1
+      - 美国(yudou66.com 玉豆免费节点)_2
+      - 美国(玉豆免费节点 yudou66.com)_16
+      - 美国(玉豆免费节点 yudou66.com)_17
+      - 美国(玉豆免费节点 yudou66.com)_18
+      - 美国(玉豆免费节点 yudou66.com)_19
+      - 美国(玉豆免费节点 yudou66.com)_20
+      - 美国(玉豆免费节点 yudou66.com)_21
+      - 美国(玉豆免费节点 yudou66.com)_22
+      - 日本(yudou66.com 玉豆免费节点)
+      - 美国(玉豆免费节点 yudou66.com)_23
+      - 美国(玉豆免费节点 yudou66.com)_24
+      - 美国(玉豆免费节点 yudou66.com)_25
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_1
+      - 🇺🇸 _US_美国->🇳🇱_NL_荷兰_2
+      - 🇺🇸 _US_美国
 
 rules:
 # 本地/局域网地址
