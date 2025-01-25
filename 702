@@ -1,2718 +1,1720 @@
-# 生成地址：kkzui.com
-# 模版名称：defaultName
-# 生成时间：2025-01-23 19:46:08
-# 不要随意改变关键字，否则会导致出错
-# acl4SSR规则
-# 去广告：支持
-# 自动测速：支持
-# 微软分流：支持
-# 苹果分流：支持
-# 增强中国IP段：不支持
-# 增强国外GFW：不支持
-
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：2025-01-25 08:13:50
+# 使用模版：V2RaySE 默认模版
+# 节点数量：228
+####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
-allow-lan: false
-mode: rule
-ipv6: false
+allow-lan: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  listen: 0.0.0.0:53
-  ipv6: false
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
-  nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-    - 119.29.29.29
-    - 180.76.76.76
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - router.asus.com
-    - localhost.sec.qq.com
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
     - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 114.114.114.114
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+
 proxies:
-  - name: 伊朗_由快嘴科技提供：kkzui.com1
-    port: 2052
-    server: 37.27.198.190
-    type: vless
-    network: ws
-    udp: true
-    servername: cd1.chocolate2001.pw
-    skip-cert-verify: true
-    ws-opts:
-      path: /?@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-      headers:
-        host: cd1.chocolate2001.pw
-    uuid: f9ee4961-cf1d-4a11-9791-8597304ee33e
-  - name: 英国_由快嘴科技提供：kkzui.com2
-    port: 8080
-    server: 146.70.61.18
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 美国_由快嘴科技提供：kkzui.com3
-    port: 2086
-    server: 190.93.245.230
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    servername: shs.xiaoqi666.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 罗马尼亚_由快嘴科技提供：kkzui.com4
-    port: 989
-    server: 185.193.49.88
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com5
-    port: 2052
-    server: 213.159.76.238
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /vless
-    uuid: d724758c-505b-43be-b313-717be1fddc8a
-  - name: 英国_由快嘴科技提供：kkzui.com6
-    port: 17926
-    server: 5.39.252.204
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: ""
-    cipher: auto
-    uuid: aabe38f9-aee2-4475-872e-21205d29b6e9
-    alterId: 0
-  - name: 英国_由快嘴科技提供：kkzui.com7
-    port: 989
-    server: 62.100.205.48
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 立陶宛_由快嘴科技提供：kkzui.com8
-    port: 989
-    server: 147.78.1.27
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 美国_由快嘴科技提供：kkzui.com9
-    port: 80
-    server: 151.101.3.8
-    type: vless
-    network: ws
-    udp: true
-    servername: 49.org
-    skip-cert-verify: true
-    ws-opts: {}
-    uuid: 69f948be-1482-42d8-84df-9fdfdf2d4262
-  - name: 美国_由快嘴科技提供：kkzui.com10
-    port: 8080
-    server: 169.150.210.233
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 美国_由快嘴科技提供：kkzui.com11
-    port: 80
-    server: 151.101.192.223
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts: {}
-    uuid: 83716d96-b5d5-4d80-9f77-582d96189887
-  - name: 美国_由快嘴科技提供：kkzui.com12
-    port: 22222
-    server: 13.61.193.126
-    type: trojan
-    network: tcp
-    udp: true
-    sni: trojan.burgerip.co.ukhttp/1.1
-    password: telegram-id-privatevpns
-    skip-cert-verify: false
-  - name: 英国_由快嘴科技提供：kkzui.com13
-    port: 22222
-    server: 51.24.50.148
-    type: trojan
-    network: tcp
-    udp: true
-    sni: trojan.burgerip.co.uk
-    password: telegram-id-privatevpns
-    skip-cert-verify: false
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com14
-    port: 989
-    server: 185.231.233.173
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 美国_由快嘴科技提供：kkzui.com15
-    port: 443
-    server: 54.202.6.21
-    type: ss
-    udp: true
-    password: amazonskr05
-    cipher: aes-256-cfb
-  - name: 乌克兰_由快嘴科技提供：kkzui.com16
-    port: 31348
-    server: 188.191.147.127
-    type: ss
-    udp: true
-    password: 6IVOuzMfH5ROpgwtRTcNJKYJvYe9FDVaU7wAYYh8PRLxxZs6
-    cipher: chacha20-ietf-poly1305
-  - name: 印度_由快嘴科技提供：kkzui.com17
-    port: 80
-    server: 151.101.158.204
-    type: vless
-    network: ws
-    udp: true
-    servername: zmaoz.faculty.ucdavis.edu.
-    skip-cert-verify: true
-    ws-opts:
-      path: /olem/ws?ed=64
-      headers:
-        host: fatmelo.com
-    alpn:
-      - h2,http/1.1
-    uuid: 064c3a3a-6a47-45f8-8ede-4869921851cc
-    client-fingerprint: chrome
-  - name: 丹麦_由快嘴科技提供：kkzui.com18
-    port: 989
-    server: 185.186.79.53
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: aes-256-cfb
-  - name: 荷兰_由快嘴科技提供：kkzui.com19
-    port: 37904
-    server: 45.150.32.46
-    type: ss
-    udp: true
-    password: EOk/bIj8XER6b0kjVQxuM/iLMTE7P8h/PT/RCI2Z2wg=
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com20
-    port: 2082
-    server: 64.225.109.206
-    type: vmess
-    network: http
-    tls: false
-    udp: true
-    skip-cert-verify: true
-    cipher: auto
-    uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-    alterId: 0
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com21
-    port: 33395
-    server: 45.8.159.241
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: ""
-    cipher: auto
-    uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com22
-    port: 80
-    server: 151.101.128.223
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts: {}
-    uuid: 83716d96-b5d5-4d80-9f77-582d96189887
-  - name: 英国_由快嘴科技提供：kkzui.com23
-    port: 23985
-    server: 5.39.254.196
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: ""
-    cipher: auto
-    uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com24
-    port: 2376
-    server: 38.107.226.238
-    type: ss
-    udp: true
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-  - name: 中国_由快嘴科技提供：kkzui.com25
-    port: 25230
-    server: cm1.awslcn.info
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    servername: cm1.awslcn.info
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: cm1.awslcn.info
-    cipher: auto
-    uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-    alterId: 0
-  - name: 未知_由快嘴科技提供：kkzui.com26
-    port: 8080
-    server: 138.199.42.68
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 罗马尼亚_由快嘴科技提供：kkzui.com27
-    port: 8080
-    server: 194.5.215.59
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 美国_由快嘴科技提供：kkzui.com28
-    port: 8080
-    server: 107.151.182.253
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 中国_由快嘴科技提供：kkzui.com29
-    port: 8080
-    server: 107.155.57.51
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 美国_由快嘴科技提供：kkzui.com30
-    port: 8080
-    server: 23.251.121.242
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 美国_由快嘴科技提供：kkzui.com31
-    port: 8080
-    server: 79.110.53.169
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 新加坡_由快嘴科技提供：kkzui.com32
-    port: 8080
-    server: 68.183.227.236
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 新加坡_由快嘴科技提供：kkzui.com33
-    port: 8080
-    server: 68.183.227.45
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 新加坡_由快嘴科技提供：kkzui.com34
-    port: 8080
-    server: 68.183.227.4
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 新加坡_由快嘴科技提供：kkzui.com35
-    port: 8080
-    server: 128.199.172.224
-    type: ss
-    udp: true
-    password: 14fFPrbezE3HDZzsMOr6
-    cipher: rc4-md5
-  - name: 丹麦_由快嘴科技提供：kkzui.com36
-    port: 989
-    server: 185.186.79.53
-    type: ssr
-    udp: true
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com37
-    port: 989
-    server: 185.231.233.173
-    type: ssr
-    udp: true
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 英国_由快嘴科技提供：kkzui.com38
-    port: 8080
-    server: 146.70.61.18
-    type: ssr
-    udp: true
-    obfs: plain
-    password: 14fFPrbezE3HDZzsMOr6
-    protocol: origin
-    cipher: rc4-md5
-    group: SSRProvider
-  - name: 英国_由快嘴科技提供：kkzui.com39
-    port: 989
-    server: 62.100.205.48
-    type: ssr
-    udp: true
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 美国_由快嘴科技提供：kkzui.com40
-    port: 443
-    server: 54.185.31.212
-    type: ssr
-    udp: true
-    obfs: plain
-    password: amazonskr05
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 立陶宛_由快嘴科技提供：kkzui.com41
-    port: 989
-    server: 147.78.1.27
-    type: ssr
-    udp: true
-    obfs: plain
-    password: f8f7aCzcPKbsF8p3
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 美国_由快嘴科技提供：kkzui.com42
-    port: 443
-    server: 54.202.6.21
-    type: ssr
-    udp: true
-    obfs: plain
-    password: amazonskr05
-    protocol: origin
-    cipher: aes-256-cfb
-    group: SSRProvider
-  - name: 加拿大_由快嘴科技提供：kkzui.com43
-    port: 80
-    server: ca225.vpnbook.com
-    type: ss
-    udp: true
-    password: JIhN6rBKkaEboLNXVSv5rq
-    cipher: chacha20-ietf-poly1305
-  - name: 加拿大_由快嘴科技提供：kkzui.com44
-    port: 80
-    server: 142.4.216.225
-    type: ss
-    udp: true
-    password: JIhN6rBKkaEboLNXVSv5rq
-    cipher: chacha20-ietf-poly1305
-  - name: 伊朗_由快嘴科技提供：kkzui.com45
-    port: 40005
-    server: sgp.fastsoonlink.com
-    type: ss
-    udp: true
-    password: 3FB23A19-9424-40C7-9139-3540228283FA
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com46
-    port: 1633
-    server: 104.207.155.64
-    type: ss
-    udp: true
-    password: o_A7inN1yqeWtOTL
-    cipher: chacha20-ietf-poly1305
-  - name: 瑞典_由快嘴科技提供：kkzui.com47
-    port: 44013
-    server: 46.246.98.155
-    type: ss
-    udp: true
-    password: UDcjYQ6Z6AIWxViZpqyOmO
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com48
-    port: 57456
-    server: 45.144.48.63
-    type: ss
-    udp: true
-    password: d3837224ed465f00
-    cipher: chacha20-ietf-poly1305
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com49
-    port: 39803
-    server: 89.208.113.187
-    type: ss
-    udp: true
-    password: PUnVoNipikiBENRKPPSuXv
-    cipher: chacha20-ietf-poly1305
-  - name: 法国_由快嘴科技提供：kkzui.com50
-    port: 443
-    server: 62.210.88.22
-    type: ss
-    udp: true
-    password: p83TBcPBdI6RnXN9VCjJt7
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com51
-    port: 20003
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com52
-    port: 26667
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com53
-    port: 20005
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com54
-    port: 8080
-    server: 45.87.175.192
-    type: ss
-    udp: true
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com55
-    port: 8080
-    server: beesyar.org
-    type: ss
-    udp: true
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com56
-    port: 62685
-    server: 213.109.147.242
-    type: ss
-    udp: true
-    password: VpKABcOpNNA0l5G2AVOmw8
-    cipher: chacha20-ietf-poly1305
-  - name: 新加坡_由快嘴科技提供：kkzui.com57
-    port: 44507
-    server: 68.183.233.52
-    type: ss
-    udp: true
-    password: eU/XXz//YVYxysJEi3/6gU3mK66ZwxnzNMUn5yJJYYw=
-    cipher: chacha20-ietf-poly1305
-  - name: 乌克兰_由快嘴科技提供：kkzui.com58
-    port: 8388
-    server: 185.234.64.35
-    type: ss
-    udp: true
-    password: ZWRiM2Ix
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com59
-    port: 8080
-    server: 45.158.171.146
-    type: ss
-    udp: true
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    cipher: chacha20-ietf-poly1305
-  - name: 爱尔兰_由快嘴科技提供：kkzui.com60
-    port: 19656
-    server: 13.79.72.126
-    type: ss
-    udp: true
-    password: AqgDVT4P74HfKt2ArV0hXp
-    cipher: chacha20-ietf-poly1305
-  - name: 加拿大_由快嘴科技提供：kkzui.com61
-    port: 990
-    server: 64.74.163.130
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com62
-    port: 18622
-    server: 92.118.112.111
-    type: ss
-    udp: true
-    password: gmYDzSG6K35s8b19oY4fGz
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com63
-    port: 8080
-    server: 45.158.171.66
-    type: ss
-    udp: true
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com64
-    port: 8080
-    server: 45.87.175.154
-    type: ss
-    udp: true
-    password: 4a2rfixophdjffa8KVA4Aa
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com65
-    port: 8080
-    server: 193.29.139.162
-    type: ss
-    udp: true
-    password: 4a2rfixophdjffa8KVA4Aa
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com66
-    port: 8080
-    server: 45.87.175.164
-    type: ss
-    udp: true
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com67
-    port: 8080
-    server: beesyar.org
-    type: ss
-    udp: true
-    password: 4a2rfixophdjffa8KVA4Aa
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com68
-    port: 8080
-    server: 45.87.175.181
-    type: ss
-    udp: true
-    password: cvII85TrW6n0OGyfpHVS1u
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com69
-    port: 8080
-    server: 45.87.175.178
-    type: ss
-    udp: true
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com70
-    port: 8080
-    server: 45.87.175.157
-    type: ss
-    udp: true
-    password: QCXDxuDlTTMD7jtgHUjIoj
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com71
-    port: 8080
-    server: 45.87.175.171
-    type: ss
-    udp: true
-    password: 1RWwXhwfAB5gAEozU4G2Pg
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com72
-    port: 8080
-    server: 45.158.171.110
-    type: ss
-    udp: true
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com73
-    port: 8080
-    server: 45.158.171.136
-    type: ss
-    udp: true
-    password: 4a2rfixophdjffa8KVA4Aa
-    cipher: chacha20-ietf-poly1305
-  - name: 匈牙利_由快嘴科技提供：kkzui.com74
-    port: 990
-    server: 91.219.237.102
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com75
-    port: 45635
-    server: 5.35.47.122
-    type: ss
-    udp: true
-    password: CLphyEMQT8nbG8EImX0A2D
-    cipher: chacha20-ietf-poly1305
-  - name: 捷克_由快嘴科技提供：kkzui.com76
-    port: 990
-    server: 195.181.160.6
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 英国_由快嘴科技提供：kkzui.com77
-    port: 6454
-    server: 51.13.183.76
-    type: ss
-    udp: true
-    password: 07LkDtx6AwrmkLMbehrIAh
-    cipher: chacha20-ietf-poly1305
-  - name: 奥地利_由快嘴科技提供：kkzui.com78
-    port: 990
-    server: 192.36.61.59
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 英国_由快嘴科技提供：kkzui.com79
-    port: 3089
-    server: 51.13.182.231
-    type: ss
-    udp: true
-    password: J0lgxy4mb52CIJ8UUcEgts
-    cipher: chacha20-ietf-poly1305
-  - name: 英国_由快嘴科技提供：kkzui.com80
-    port: 6870
-    server: 51.13.182.236
-    type: ss
-    udp: true
-    password: M7x1mGNOwhPiRB9jSxZJNy
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com81
-    port: 23492
-    server: 103.106.1.92
-    type: ss
-    udp: true
-    password: yMX9WGPgUEcRZmlaa0YHHC
-    cipher: chacha20-ietf-poly1305
-  - name: 乌克兰_由快嘴科技提供：kkzui.com82
-    port: 8388
-    server: 95.164.44.221
-    type: ss
-    udp: true
-    password: ZDAxZDE2
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com83
-    port: 1633
-    server: 207.246.101.50
-    type: ss
-    udp: true
-    password: o_A7inN1yqeWtOTL
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com84
-    port: 57456
-    server: war.ssvpnapp.win
-    type: ss
-    udp: true
-    password: d3837224ed465f00
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com85
-    port: 1230
-    server: 38.107.226.146
-    type: ss
-    udp: true
-    password: H5S0hvcxRi#YLmgU
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com86
-    port: 28825
-    server: 45.151.62.54
-    type: ss
-    udp: true
-    password: 0zyDRZ1XmNXaaCAN7KEA8a
-    cipher: chacha20-ietf-poly1305
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com87
-    port: 42090
-    server: 89.23.103.125
-    type: ss
-    udp: true
-    password: uQS5ntVqC00sSKkeNzUiD3
-    cipher: chacha20-ietf-poly1305
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com88
-    port: 58176
-    server: 94.228.165.178
-    type: ss
-    udp: true
-    password: afKAHp1VfRWZu91LIi9o0D
-    cipher: chacha20-ietf-poly1305
-  - name: 俄罗斯_由快嘴科技提供：kkzui.com89
-    port: 16356
-    server: 147.45.60.33
-    type: ss
-    udp: true
-    password: LqlPI19oqnunGNSLMvdXyB
-    cipher: chacha20-ietf-poly1305
-  - name: 乌克兰_由快嘴科技提供：kkzui.com90
-    port: 2927
-    server: 95.164.9.144
-    type: ss
-    udp: true
-    password: ug4Fu79SEREdFGlt2sUyT4
-    cipher: chacha20-ietf-poly1305
-  - name: 印度_由快嘴科技提供：kkzui.com91
-    port: 51348
-    server: 159.65.149.72
-    type: ss
-    udp: true
-    password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com92
-    port: 990
-    server: 92.118.205.228
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com93
-    port: 20012
-    server: 141.98.234.93
-    type: ss
-    udp: true
-    password: WfmxKX2FBJRU0Ie9VLIYDL
-    cipher: chacha20-ietf-poly1305
-  - name: 乌克兰_由快嘴科技提供：kkzui.com94
-    port: 2927
-    server: shadowsocks.ctsubvpn.ggff.net
-    type: ss
-    udp: true
-    password: ug4Fu79SEREdFGlt2sUyT4
-    cipher: chacha20-ietf-poly1305
-  - name: 意大利_由快嘴科技提供：kkzui.com95
-    port: 990
-    server: 185.213.20.227
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 荷兰_由快嘴科技提供：kkzui.com96
-    port: 990
-    server: 45.154.206.192
-    type: ss
-    udp: true
-    password: f8f7aCzcPKbsF8p3
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com97
-    port: 6199
-    server: 45.87.153.246
-    type: ss
-    udp: true
-    password: f7EI0dGWQM42T8gwN9CZIj
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com98
-    port: 6961
-    server: 51.142.73.20
-    type: ss
-    udp: true
-    password: tAoWzuKvNOPrsLc4fAEOno
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com99
-    port: 13751
-    server: 51.145.68.57
-    type: ss
-    udp: true
-    password: KlJlXXe9KjQX4mh4xC05c9
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com100
-    port: 50002
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: 73637cec-699d-4d87-99af-0776ac880604
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com101
-    port: 26666
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: 73637cec-699d-4d87-99af-0776ac880604
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com102
-    port: 20007
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: 73637cec-699d-4d87-99af-0776ac880604
-    cipher: chacha20-ietf-poly1305
-  - name: 未知_由快嘴科技提供：kkzui.com103
-    port: 50003
-    server: service.ouluyun9803.com
-    type: ss
-    udp: true
-    password: 73637cec-699d-4d87-99af-0776ac880604
-    cipher: chacha20-ietf-poly1305
-  - name: 德国_由快嘴科技提供：kkzui.com104
-    port: 1194
-    server: 49.13.10.50
-    type: ss
-    udp: true
-    password: Uxm4ADwftKdXq5qRA4ZfHS
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com105
-    port: 7777
-    server: 154.7.179.11
-    type: ss
-    udp: true
-    password: 39459633-d825-4778-bf72-175aa1ef3737
-    cipher: chacha20-ietf-poly1305
-  - name: 美国_由快嘴科技提供：kkzui.com106
-    port: 8388
-    server: 137.175.113.192
-    type: ss
-    udp: true
-    password: asd123456
-    cipher: chacha20-ietf
-  - name: 荷兰_由快嘴科技提供：kkzui.com107
-    port: 8443
-    server: 3h-poland1.09vpn.com
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /vmess/
-      headers:
-        host: 3h-poland1.09vpn.com
-    cipher: auto
-    uuid: a4850481-9b95-430f-9b2d-192d2410b4f4
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com108
-    port: 80
-    server: s5.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in104.18.75.85
-      headers:
-        host: 100-235-225-209.s5.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com109
-    port: 443
-    server: tokyo.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: tokyo.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com110
-    port: 80
-    server: 198.41.209.70
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: chunchuan.kejixiaoqi666.store
-    cipher: auto
-    uuid: e6543319-0574-42ac-b778-1c4325d626f5
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com111
-    port: 443
-    server: se.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: se.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com112
-    port: 80
-    server: s4.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in104.24.152.253
-      headers:
-        host: 100-21-178-246.s4.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com113
-    port: 2086
-    server: 190.93.245.230
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com114
-    port: 443
-    server: jp.cowvpn.org
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /cctv13/vmess_jpcf
-      headers:
-        host: jpcf.cowvpn.org
-    cipher: auto
-    uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com115
-    port: 443
-    server: br.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: br.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com116
-    port: 443
-    server: us.cowvpn.org
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /cctv13/vmess_us1
-      headers:
-        host: us2cf.cowvpn.org
-    cipher: auto
-    uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com117
-    port: 443
-    server: hk1.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: hk1.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 中国_由快嘴科技提供：kkzui.com118
-    port: 25230
-    server: cm1.awslcn.info
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: cm1.awslcn.info
-    cipher: auto
-    uuid: 243eab52-9ac1-405c-887c-eb112c0985b8
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com119
-    port: 80
-    server: 104.17.213.241
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: chunchuan.kejixiaoqi666.store
-    cipher: auto
-    uuid: e6543319-0574-42ac-b778-1c4325d626f5
-    alterId: 0
-  - name: 比利时_由快嘴科技提供：kkzui.com120
-    port: 443
-    server: 57.129.24.124
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkvws
-      headers:
-        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 荷兰_由快嘴科技提供：kkzui.com121
-    port: 443
-    server: hms26.xpengmotors.sbs
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkws
-      headers:
-        host: hms26.xpengmotors.sbs
-    cipher: auto
-    uuid: fb0a2de6-bf06-4ff0-97ce-c21abcdc2d55
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com122
-    port: 2095
-    server: s5.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in172.67.11.171
-      headers:
-        host: 100-26-239-98.s5.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com123
-    port: 2086
-    server: s2.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in172.64.43.14
-      headers:
-        host: 100-171-104-238.s2.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com124
-    port: 8443
-    server: portland.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: portland.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com125
-    port: 8880
-    server: yx2.changyouVPN.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: yg.changyouVPN.top
-    cipher: auto
-    uuid: ae55ed7f-63b7-40fe-b639-dad4d2c9a8db
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com126
-    port: 2086
-    server: s4.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in172.64.38.67
-      headers:
-        host: 100-240-91-30.s4.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com127
-    port: 8443
-    server: buffalo.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: buffalo.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com128
-    port: 2086
-    server: 104.21.89.219
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com129
-    port: 8443
-    server: phoenix.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /index
-      headers:
-        host: phoenix.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com130
-    port: 2086
-    server: shs.xiaoqi666.xyz
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com131
-    port: 8080
-    server: s5.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in104.20.16.209
-      headers:
-        host: 100-149-191-2.s5.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com132
-    port: 2082
-    server: s4.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in172.67.8.3
-      headers:
-        host: 100-116-85-183.s4.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 英国_由快嘴科技提供：kkzui.com133
-    port: 23985
-    server: 5.39.254.196
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 5.39.254.196
-    cipher: auto
-    uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81
-    alterId: 0
-  - name: 未知_由快嘴科技提供：kkzui.com134
-    port: 8880
-    server: server32.beheshtbaneh.com
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: server32.beheshtbaneh.com
-    cipher: auto
-    uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com135
-    port: 2086
-    server: s1.cn-db.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in104.24.181.189
-      headers:
-        host: 100-47-154-9.s1.cn-db.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com136
-    port: 2086
-    server: s2.db-link01.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /dabai.in172.67.68.139
-      headers:
-        host: 100-154-72-114.s2.db-link01.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com137
-    port: 443
-    server: 134.195.198.147
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: inna.cfd
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com138
-    port: 443
-    server: 38.91.106.227
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com139
-    port: 443
-    server: tokyo.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: tokyo.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com140
-    port: 443
-    server: 23.162.200.227
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 23.162.200.227
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com141
-    port: 8443
-    server: buffalo.899994.xyz
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: buffalo.899994.xyz
-    cipher: auto
-    uuid: a0605527-28e4-449c-80ee-5642cc16a8af
-    alterId: 0
-  - name: 比利时_由快嘴科技提供：kkzui.com142
-    port: 443
-    server: 57.129.24.141
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 57.129.24.141
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com143
-    port: 38007
-    server: 142.4.108.140
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 142.4.108.140
-    cipher: auto
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com144
-    port: 2086
-    server: s5.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 100-68-4-71.s5.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com145
-    port: 8880
-    server: 104.16.155.10
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 100-151-81-36.s4.db-link01.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com146
-    port: 2052
-    server: s4.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 100-85-3-146.s4.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com147
-    port: 38007
-    server: 142.4.108.131
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 142.4.108.131
-    cipher: auto
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com148
-    port: 443
-    server: 104.21.81.115
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: northflank.107421.xyz
-    cipher: auto
-    uuid: de04add9-5c68-8bab-950c-08cd5320df18
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com149
-    port: 2082
-    server: s1.db-link02.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 100-113-212-3.s1.db-link02.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com150
-    port: 80
-    server: s1.cn-db.top
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: 100-215-151-174.s1.cn-db.top
-    cipher: auto
-    uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com151
-    port: 2086
-    server: shs.xiaoqi666.xyz
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shs.xiaoqi666.xyz
-    cipher: auto
-    uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com152
-    port: 12036
-    server: 161.35.46.214
-    type: vmess
-    network: tcp
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    cipher: auto
-    uuid: 707e998f-e696-486d-b17e-72b04cfca367
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com153
-    port: 26389
-    server: 34.92.50.99
-    type: vmess
-    network: tcp
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    cipher: auto
-    uuid: 3415f6ed-0880-43bb-85aa-d6c064cc968c
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com154
-    port: 80
-    server: 104.31.16.28
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /IOebhLMhl1CTbFHbL95myfRX2
-      headers:
-        host: ca4.tehme2.fun
-    cipher: auto
-    uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-    alterId: 0
-  - name: 未知_由快嘴科技提供：kkzui.com155
-    port: 8080
-    server: zfc.windowsupdate1.com
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: sgyx.651568.xyz
-    cipher: auto
-    uuid: 2dbeeb76-a71f-493f-bd92-33f0193291c5
-    alterId: 0
-  - name: 美国_由快嘴科技提供：kkzui.com156
-    port: 2375
-    server: 38.107.226.238
-    type: ss
-    udp: true
-    password: faBAoD54k87UJG7
-    cipher: aes-256-gcm
-  - name: 澳大利亚_由快嘴科技提供：kkzui.com157
-    port: 443
-    server: 160.30.21.105
-    type: trojan
-    udp: true
-    password: 94d219c9-1afc-4d42-b090-8b3794764380
-    skip-cert-verify: true
+  - {"name":"US_分享日记_1","type":"vless","server":"104.17.32.196","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/telegram-proxy_mtm-telegram-proxy_mtm-telegram-proxy_mtm?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_2","type":"vless","server":"162.159.138.178","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_3","type":"vless","server":"104.21.59.168","port":443,"uuid":"d77906a1-59fd-4222-ba9e-3de834bb33e2","tls":true,"servername":"vpn442telegram.wucwej.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"vpn442telegram.wucwej.workers.Dev"}}}
+  - {"name":"US_分享日记_4","type":"vless","server":"172.67.144.253","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_5","type":"vless","server":"104.22.64.230","port":443,"uuid":"cb5b051b-0669-48fa-9610-47f4d6ebe089","tls":true,"servername":"2F636a08-odd-BLOCk-FC92.PlAcid-capybaRa626.WOrKERs.DEv","network":"ws","ws-opts":{"path":"/jlhgmjnvspxrrxyz?ed=2560","headers":{"host":"2F636a08-odd-BLOCk-FC92.PlAcid-capybaRa626.WOrKERs.DEv"}}}
+  - {"name":"US_分享日记_6","type":"vless","server":"104.16.57.90","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_7","type":"vless","server":"104.21.95.135","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_8","type":"vless","server":"104.26.9.236","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_9","type":"vless","server":"104.22.56.77","port":443,"uuid":"c7d543af-1023-4b96-a698-187c190d3f4c","tls":true,"servername":"nautica.foolvpn.me","network":"ws","ws-opts":{"path":"/47.89.39.186-39251","headers":{"host":"nautica.foolvpn.me"}}}
+  - {"name":"US_分享日记_10","type":"vless","server":"104.26.15.221","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_11","type":"vmess","server":"tokyo.899994.xyz","port":443,"cipher":"auto","uuid":"a0605527-28e4-449c-80ee-5642cc16a8af","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"tokyo.899994.xyz"}}}
+  - {"name":"US_分享日记_12","type":"vless","server":"172.64.35.227","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_13","type":"vless","server":"104.21.21.181","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_14","type":"vless","server":"104.21.61.49","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_15","type":"vless","server":"172.64.35.199","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CA_分享日记_1","type":"vless","server":"165.154.43.92","port":35184,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"GB_分享日记_1","type":"vless","server":"217.163.76.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_16","type":"vless","server":"172.67.194.31","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_17","type":"vless","server":"63.141.128.102","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_18","type":"vless","server":"104.19.240.29","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"NL_分享日记_1","type":"vless","server":"185.133.35.195","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_19","type":"vless","server":"104.21.51.114","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_20","type":"vless","server":"pranab.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"KR_分享日记_1","type":"vless","server":"3.35.237.255","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"GB_分享日记_2","type":"vless","server":"144.24.95.121","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_21","type":"vless","server":"104.21.84.35","port":443,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"servername":"PPAL03.NaVIYi2139.WOrKErs.dEV","network":"ws","ws-opts":{"path":"/","headers":{"host":"PPAL03.NaVIYi2139.WOrKErs.dEV"}}}
+  - {"name":"IR_分享日记_1","type":"vless","server":"91.239.148.100","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CA_分享日记_2","type":"vless","server":"168.138.90.241","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_22","type":"vless","server":"join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_23","type":"vless","server":"172.67.156.117","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"KR_分享日记_2","type":"vless","server":"193.123.244.221","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_24","type":"vless","server":"172.67.137.37","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"RU_分享日记_1","type":"vless","server":"194.76.18.99","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_1","type":"vless","server":"40.83.122.22","port":2053,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_2","type":"vless","server":"47.57.245.232","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"BE_分享日记","type":"vless","server":"57.128.197.158","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_25","type":"vless","server":"damien.ns.cloudflare.com","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_26","type":"vless","server":"104.21.84.22","port":443,"uuid":"375dd25d-0ec6-454c-be6f-ce67b196b23b","tls":true,"servername":"freedom11.fmnxmt.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"freedom11.fmnxmt.workers.dev"}}}
+  - {"name":"US_分享日记_27","type":"vless","server":"172.67.194.21","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray,@icv2ray?ed=2560","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_28","type":"vmess","server":"hsj.lbxjc.online","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
+  - {"name":"US_分享日记_29","type":"vless","server":"104.26.12.31","port":443,"uuid":"a6dd00f2-de2a-4c3c-bc0a-0e9818e95dde","tls":true,"servername":"GErmaNy-exK.pAGEs.DEV","network":"ws","ws-opts":{"path":"/n2s3pihtkefm2xga/mtgumtk4lje2oc4z?ed=2560","headers":{"host":"GErmaNy-exK.pAGEs.DEV"}}}
+  - {"name":"US_分享日记_30","type":"vless","server":"63.141.128.208","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"KR_分享日记_3","type":"vless","server":"27.116.108.61","port":30012,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_31","type":"vless","server":"104.17.247.203","port":443,"uuid":"46dbac8b-eaba-4275-940c-819f95d16916","tls":true,"servername":"falcunargo.9cfaf68585.workers.Dev","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"falcunargo.9cfaf68585.workers.Dev"}}}
+  - {"name":"UA_分享日记_1","type":"vless","server":"45.67.215.174","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"KR_分享日记_4","type":"vless","server":"193.122.125.205","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_32","type":"vless","server":"45.87.102.122","port":444,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_33","type":"vless","server":"45.87.103.154","port":52001,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"KR_分享日记_5","type":"vless","server":"118.47.65.248","port":30012,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"IN_分享日记_1","type":"vless","server":"103.106.228.126","port":2053,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"GB_分享日记_3","type":"vless","server":"51.44.146.211","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"CN_分享日记_3","type":"vless","server":"156.254.115.241","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_34","type":"vmess","server":"sgfqkqmltcy.site","port":443,"cipher":"auto","uuid":"d13fc2f5-3e05-4795-81eb-44143a09e552","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/rbqqvws","headers":{"host":"sgfqkqmltcy.site"}}}
+  - {"name":"DE_分享日记_1","type":"trojan","server":"3.125.245.167","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_35","type":"trojan","server":"63.177.39.101","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_36","type":"trojan","server":"18.170.179.82","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"GB_分享日记_4","type":"trojan","server":"51.24.50.65","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_37","type":"vless","server":"156.230.12.71","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"IE_分享日记_1","type":"trojan","server":"54.247.117.153","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"NL_分享日记_2","type":"ss","server":"193.29.139.179","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"US_分享日记_38","type":"vmess","server":"s1.datasheetserver.com","port":443,"cipher":"auto","uuid":"051e3f0c-c139-4c7c-9559-41222b72ca20","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/datasheet","headers":{"host":"s1.datasheetserver.com"}}}
+  - {"name":"US_分享日记_39","type":"vless","server":"64.227.148.121","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"blr-in.fromblancwithlove.com","network":"tcp"}
+  - {"name":"IE_分享日记_2","type":"vless","server":"54.229.70.49","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"PL_分享日记_1","type":"vless","server":"45.85.210.217","port":10913,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_40","type":"vless","server":"13.36.96.84","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"US_分享日记_41","type":"vmess","server":"104.17.213.241","port":80,"cipher":"auto","uuid":"e6543319-0574-42ac-b778-1c4325d626f5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/","headers":{"host":"chunchuan.kejixiaoqi666.store"}}}
+  - {"name":"GB_分享日记_5","type":"vless","server":"35.178.131.22","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"IE_分享日记_3","type":"trojan","server":"52.211.212.100","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_42","type":"vless","server":"154.17.231.175","port":56666,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_43","type":"vless","server":"108.165.152.67","port":2053,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_44","type":"vless","server":"84.17.45.176","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"us3.fromblancwithlove.com","network":"tcp"}
+  - {"name":"CN_分享日记_4","type":"vless","server":"27.50.49.41","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"PL_分享日记_2","type":"vless","server":"185.144.245.62","port":18556,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_5","type":"vless","server":"185.213.62.199","port":39584,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_45","type":"vless","server":"206.238.236.137","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"KR_分享日记_6","type":"vless","server":"114.30.225.88","port":30030,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_6","type":"vless","server":"27.50.48.126","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_46","type":"trojan","server":"13.50.173.209","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_47","type":"vless","server":"192.200.160.35","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_7","type":"vless","server":"27.50.49.177","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"RU_分享日记_2","type":"vless","server":"81.94.150.122","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"spb1.fromblancwithlove.com","network":"tcp"}
+  - {"name":"IE_分享日记_4","type":"trojan","server":"63.34.70.121","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"IE_分享日记_5","type":"trojan","server":"54.73.212.66","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"CN_分享日记_8","type":"vless","server":"27.50.49.230","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"JP_分享日记","type":"vless","server":"103.116.7.103","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"SE_分享日记","type":"vless","server":"141.147.144.246","port":8080,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"KR_分享日记_7","type":"trojan","server":"3.35.101.125","port":443,"udp":true,"password":"3760559353321758720","sni":"crisp-collie.treefrog761.one","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_48","type":"vless","server":"192.200.160.15","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"BG_分享日记","type":"vless","server":"91.229.132.49","port":8080,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_49","type":"vless","server":"108.165.152.40","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"RU_分享日记_3","type":"vless","server":"92.243.75.49","port":2087,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_9","type":"vless","server":"27.50.49.166","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_10","type":"vless","server":"27.50.48.186","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_11","type":"vless","server":"27.50.48.154","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_12","type":"vless","server":"27.50.49.74","port":2087,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_50","type":"vless","server":"206.238.236.37","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"GB_分享日记_6","type":"vless","server":"158.180.82.203","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"AU_分享日记_1","type":"vless","server":"43.133.70.168","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_51","type":"vless","server":"206.238.236.90","port":2087,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_52","type":"vless","server":"45.59.187.105","port":26443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"PL_分享日记_3","type":"vless","server":"45.85.210.234","port":25463,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_53","type":"trojan","server":"16.16.132.151","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"IE_分享日记_6","type":"trojan","server":"54.72.194.17","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"CA_分享日记_3","type":"vless","server":"52.60.155.72","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"RU_分享日记_4","type":"vless","server":"92.243.74.3","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_54","type":"vmess","server":"104.21.81.115","port":443,"cipher":"auto","uuid":"de04add9-5c68-8bab-950c-08cd5320df18","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/vmess","headers":{"host":"northflank.107421.xyz"}}}
+  - {"name":"US_分享日记_55","type":"vless","server":"91.217.139.121","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CZ_分享日记_1","type":"vless","server":"79.127.224.12","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"bru-be-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"DE_分享日记_2","type":"vless","server":"195.181.175.176","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"de1.fromblancwithlove.com","network":"tcp"}
+  - {"name":"GB_分享日记_7","type":"trojan","server":"3.9.71.175","port":22222,"udp":true,"password":"telegram-id-privatevpns","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_56","type":"vless","server":"13.216.29.220","port":22222,"uuid":"05519058-d2ac-4f28-9e4a-2b2a1386749e","tls":true,"servername":"telegram-channel-vlessconfig.sohala.uk","network":"ws","ws-opts":{"path":"/telegram-channel-vlessconfig-ws","headers":{"host":"telegram-channel-vlessconfig.sohala.uk"}}}
+  - {"name":"US_分享日记_57","type":"vless","server":"15.204.153.78","port":443,"uuid":"3b9bc773-05eb-4d5f-8c1f-57342c0c4f40","tls":true,"servername":"147135010103.sec19org.com","network":"tcp"}
+  - {"name":"US_分享日记_58","type":"vless","server":"141.101.123.208","port":443,"uuid":"8e63cfe4-8855-4334-9619-a5d403bf2b8e","tls":true,"servername":"usa.warpo.me","network":"ws","ws-opts":{"path":"/bing","headers":{"host":"usa.warpo.me"}}}
+  - {"name":"US_分享日记_59","type":"trojan","server":"13.36.116.184","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"CN_分享日记_13","type":"vless","server":"27.50.49.188","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_60","type":"vless","server":"108.165.152.91","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_14","type":"vless","server":"154.218.15.250","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CA_分享日记_4","type":"trojan","server":"52.60.98.113","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"unKnow_分享日记","type":"vless","server":"209.94.90.87","port":2087,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"UA_分享日记_2","type":"vless","server":"95.164.116.22","port":2501,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.mifeng.us.kg"}}}
+  - {"name":"SG_分享日记","type":"vless","server":"156.146.56.207","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"sin-sg-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"CN_分享日记_15","type":"vless","server":"156.255.90.175","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"RU_分享日记_5","type":"vless","server":"92.243.74.23","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_61","type":"trojan","server":"18.119.21.16","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"CN_分享日记_16","type":"vless","server":"27.50.49.61","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_62","type":"vless","server":"206.238.236.187","port":2096,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"DE_分享日记_3","type":"vless","server":"47.254.171.15","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"AT_分享日记_1","type":"vless","server":"212.183.88.14","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_63","type":"vless","server":"216.24.57.1","port":2053,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_64","type":"vless","server":"147.135.125.112","port":443,"uuid":"3b9bc773-05eb-4d5f-8c1f-57342c0c4f40","tls":true,"servername":"147135010103.sec19org.com","network":"tcp"}
+  - {"name":"DE_分享日记_4","type":"vless","server":"47.254.171.15","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_17","type":"ss","server":"156.244.9.92","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"FR_分享日记_1","type":"ss","server":"163.172.118.110","port":12345,"password":"dongtaiwang.com","cipher":"aes-256-gcm"}
+  - {"name":"CZ_分享日记_2","type":"vless","server":"79.127.249.104","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"se1.fromblancwithlove.com","network":"tcp"}
+  - {"name":"CN_分享日记_18","type":"ss","server":"154.90.63.193","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"IT_分享日记","type":"vless","server":"84.17.58.134","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"mil-it.fromblancwithlove.com","network":"tcp"}
+  - {"name":"RU_分享日记_6","type":"vless","server":"92.243.74.239","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"RU_分享日记_7","type":"ss","server":"85.192.28.213","port":6650,"password":"jlhVIf6X4xZa1z5nhPNlRK","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"US_分享日记_65","type":"vless","server":"169.150.228.24","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"bog-co-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"CZ_分享日记_3","type":"vless","server":"95.173.205.70","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"osl-no-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"DE_分享日记_5","type":"vless","server":"130.61.83.37","port":8443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_66","type":"vless","server":"172.64.147.50","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.xn--i-sx6a60i.us.kg","network":"ws","ws-opts":{"path":"/","headers":{"host":"a.xn--i-sx6a60i.us.kg"}}}
+  - {"name":"US_分享日记_67","type":"vless","server":"150.230.146.170","port":2053,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_68","type":"vless","server":"65.75.194.7","port":12266,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_19","type":"vless","server":"27.50.49.37","port":2053,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"DE_分享日记_6","type":"vmess","server":"5.75.201.39","port":59521,"cipher":"auto","uuid":"53e6dd39-27d4-4063-817a-9c00b077a2b7","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"IR_分享日记_2","type":"vless","server":"79.127.70.67","port":2919,"uuid":"a0b8d30b-3022-488e-bdc2-c24bb34272c9","tls":false,"network":"tcp"}
+  - {"name":"US_分享日记_69","type":"vless","server":"206.238.236.31","port":8443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"IN_分享日记_2","type":"vless","server":"103.50.33.138","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"eze-1.fromblancwithlove.com","network":"tcp"}
+  - {"name":"US_分享日记_70","type":"vless","server":"206.238.236.216","port":2083,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"KZ_分享日记","type":"vless","server":"185.35.223.93","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"kz-2.fromblancwithlove.com","network":"tcp"}
+  - {"name":"LT_分享日记","type":"ss","server":"147.78.1.27","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"NL_分享日记_3","type":"vless","server":"160.153.137.128","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
+  - {"name":"FR_分享日记_2","type":"vmess","server":"irvideo.cfd","port":443,"cipher":"auto","uuid":"e537f2f5-2a0c-4f59-92c9-832ca6433bf3","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"irvideo.cfd"}}}
+  - {"name":"UA_分享日记_3","type":"vless","server":"46.151.194.89","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"sao-br.fromblancwithlove.com","network":"tcp"}
+  - {"name":"DE_分享日记_7","type":"vless","server":"91.107.255.95","port":443,"uuid":"e4676a6c-cae2-4dc6-8cf9-a3a91c53ea2a","tls":true,"servername":"dd5.atelienaderr.ir","network":"ws","ws-opts":{"path":"/","headers":{"host":"dd5.atelienaderr.ir"}}}
+  - {"name":"NL_分享日记_4","type":"vless","server":"160.153.0.131","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
+  - {"name":"GB_分享日记_8","type":"ss","server":"212.102.53.197","port":443}
+  - {"name":"NL_分享日记_5","type":"vless","server":"160.153.0.183","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
+  - {"name":"GB_分享日记_9","type":"ss","server":"141.98.101.178","port":443}
+  - {"name":"IS_分享日记","type":"vless","server":"94.250.246.200","port":8080,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","tls":true,"servername":"a.mifeng.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"a.mifeng.us.kg"}}}
+  - {"name":"US_分享日记_71","type":"vmess","server":"br.899994.xyz","port":443,"cipher":"auto","uuid":"a0605527-28e4-449c-80ee-5642cc16a8af","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/index","headers":{"host":"br.899994.xyz"}}}
+  - {"name":"CZ_分享日记_4","type":"vless","server":"79.127.252.81","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"lim-pe-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"US_分享日记_72","type":"vless","server":"169.150.246.91","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"jnb-sa.fromblancwithlove.com","network":"tcp"}
+  - {"name":"NL_分享日记_6","type":"vless","server":"160.153.0.116","port":8443,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"servername":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm","network":"ws","ws-opts":{"path":"/","headers":{"host":"HdWyNdJd78.kHoSgElBaLaToChIpAs-nAdIdAmEt.cOm"}}}
+  - {"name":"KR_分享日记_8","type":"vless","server":"211.105.35.130","port":30012,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_73","type":"vless","server":"69.84.182.104","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"FR_分享日记_3","type":"vless","server":"141.11.86.109","port":8080,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"US_分享日记_74","type":"vmess","server":"00.likelike.us.kg","port":443,"cipher":"auto","uuid":"680e91d7-01ff-4082-b71a-472d5236adee","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/serv00?ed=2048","headers":{"host":"00.likelike.us.kg"}}}
+  - {"name":"ES_分享日记","type":"vless","server":"83.147.3.165","port":8080,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CZ_分享日记_5","type":"vless","server":"95.173.193.209","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"syd-au-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"US_分享日记_75","type":"vless","server":"63.141.128.172","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"AT_分享日记_2","type":"vless","server":"212.183.88.186","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_76","type":"vless","server":"206.238.237.225","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_77","type":"vless","server":"192.0.54.18","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"UA_分享日记_4","type":"vless","server":"45.67.215.96","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"US_分享日记_78","type":"vless","server":"63.141.128.193","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CZ_分享日记_6","type":"vless","server":"79.127.200.170","port":8443,"uuid":"157448af-8ecf-4075-a9e9-b23a6a94899b","tls":true,"servername":"yyz-ca-01.fromblancwithlove.com","network":"tcp"}
+  - {"name":"US_分享日记_79","type":"vless","server":"63.141.128.94","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_20","type":"vless","server":"8.219.91.179","port":443,"uuid":"41abecd9-8096-4142-a75c-4e1d36d990bd","tls":true,"servername":"mmdserver.us.kg","network":"ws","ws-opts":{"path":"/?ed=2048","headers":{"host":"mmdserver.us.kg"}}}
+  - {"name":"DE_分享日记_8","type":"trojan","server":"18.192.160.68","port":22222,"udp":true,"password":"telegram-id-directvpn","sni":"trojan.burgerip.co.uk","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"NL_分享日记_7","type":"vless","server":"45.131.208.21","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_8","type":"vless","server":"45.131.4.142","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_9","type":"vless","server":"45.131.5.124","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_10","type":"vless","server":"45.131.4.34","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_11","type":"vless","server":"45.131.208.149","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_12","type":"vless","server":"45.131.5.85","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_13","type":"vless","server":"45.131.208.24","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_14","type":"vless","server":"45.131.208.6","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_15","type":"vless","server":"45.131.7.48","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_16","type":"vless","server":"45.131.208.203","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_17","type":"vless","server":"45.131.208.61","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_18","type":"vless","server":"45.131.208.185","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_19","type":"vless","server":"45.131.210.222","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_20","type":"vless","server":"45.131.208.15","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_21","type":"vless","server":"45.131.4.165","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_22","type":"vless","server":"45.131.4.71","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_23","type":"vless","server":"45.131.210.107","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_24","type":"vless","server":"45.131.208.90","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_25","type":"vless","server":"45.131.211.98","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_26","type":"vless","server":"45.131.210.201","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_27","type":"vless","server":"45.131.211.80","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_28","type":"vless","server":"45.131.208.44","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_29","type":"vless","server":"45.131.5.49","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_30","type":"vless","server":"45.131.4.52","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"US_分享日记_80","type":"vless","server":"104.24.132.5","port":80,"uuid":"946b3994-cbcc-402c-bd93-c7f9df4d1c3b","tls":true,"servername":"nameless-silence-3ddd-ppal03.gecob30535.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"nameless-silence-3ddd-ppal03.gecob30535.workers.dev"}}}
+  - {"name":"NL_分享日记_31","type":"vless","server":"45.131.210.203","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_32","type":"vless","server":"45.131.211.94","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_33","type":"vless","server":"45.131.209.100","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"US_分享日记_81","type":"vless","server":"104.16.179.157","port":80,"uuid":"946b3994-cbcc-402c-bd93-c7f9df4d1c3b","tls":true,"servername":"nameless-silence-3ddd-ppal03.gecob30535.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"nameless-silence-3ddd-ppal03.gecob30535.workers.dev"}}}
+  - {"name":"US_分享日记_82","type":"vless","server":"104.24.157.37","port":80,"uuid":"c09d51b8-25c5-4eaf-98bc-ef40c807de84","tls":true,"servername":"dawn-mountain-d79f-ppal03.doniji1519.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dawn-mountain-d79f-ppal03.doniji1519.workers.dev"}}}
+  - {"name":"NL_分享日记_34","type":"vless","server":"45.131.7.70","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"US_分享日记_83","type":"vless","server":"47.89.244.253","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"vs.bgm2024.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vs.bgm2024.us.kg"}}}
+  - {"name":"DE_分享日记_9","type":"vless","server":"185.16.110.107","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"vs.bgm2024.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vs.bgm2024.us.kg"}}}
+  - {"name":"NL_分享日记_35","type":"vless","server":"45.131.210.157","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_36","type":"vless","server":"185.133.35.82","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"vs.bgm2024.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vs.bgm2024.us.kg"}}}
+  - {"name":"US_分享日记_84","type":"vless","server":"216.221.210.185","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"vs.bgm2024.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"vs.bgm2024.us.kg"}}}
+  - {"name":"US_分享日记_85","type":"vless","server":"104.16.53.48","port":80,"uuid":"c1659206-d827-41f6-9f73-f18ca30102d3","tls":true,"servername":"still-forest-e3e8-ppal03.mekah93880.workers.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"still-forest-e3e8-ppal03.mekah93880.workers.dev"}}}
+  - {"name":"NL_分享日记_37","type":"vless","server":"45.131.208.192","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"NL_分享日记_38","type":"vless","server":"45.131.209.37","port":80,"uuid":"daf24a6d-2f78-4cab-867a-4da0f4c91cff","tls":true,"servername":"1224.j9q1xuv8.workers.dev","network":"ws","ws-opts":{"path":"telegram @wangcai2 /?ed=2048","headers":{"host":"1224.j9q1xuv8.workers.dev"}}}
+  - {"name":"US_分享日记_86","type":"vless","server":"104.16.164.195","port":80,"uuid":"ca68a029-971c-4ea4-8c1d-411cb7adc474","tls":true,"servername":"patient-sunset-f000-ppal03.cijej53213.workers.dev","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"patient-sunset-f000-ppal03.cijej53213.workers.dev"}}}
+  - {"name":"AU_分享日记_2","type":"vless","server":"43.155.30.252","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_21","type":"vless","server":"128.1.132.82","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"AU_分享日记_3","type":"vless","server":"43.128.26.74","port":443,"uuid":"48eccebc-1e36-4c60-b088-55fb793f6688","tls":true,"servername":"ngx.ambercc.filegear-sg.me","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"ngx.ambercc.filegear-sg.me"}}}
+  - {"name":"CN_分享日记_22","type":"vless","server":"8.218.26.21","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_23","type":"vless","server":"8.210.69.31","port":443,"uuid":"06e4425e-a8cb-4b63-929f-2105604ab0a9","tls":true,"servername":"dsm.ylks.us.kg","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"dsm.ylks.us.kg"}}}
+  - {"name":"CN_分享日记_24","type":"trojan","server":"129.226.150.167","port":443,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"US_分享日记_87","type":"trojan","server":"34.80.79.47","port":2096,"udp":true,"password":"Aimer","sni":"ngep.ambercc.filegear-sg.me","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2735,171 +1737,247 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 伊朗_由快嘴科技提供：kkzui.com1
-      - 英国_由快嘴科技提供：kkzui.com2
-      - 美国_由快嘴科技提供：kkzui.com3
-      - 罗马尼亚_由快嘴科技提供：kkzui.com4
-      - 俄罗斯_由快嘴科技提供：kkzui.com5
-      - 英国_由快嘴科技提供：kkzui.com6
-      - 英国_由快嘴科技提供：kkzui.com7
-      - 立陶宛_由快嘴科技提供：kkzui.com8
-      - 美国_由快嘴科技提供：kkzui.com9
-      - 美国_由快嘴科技提供：kkzui.com10
-      - 美国_由快嘴科技提供：kkzui.com11
-      - 美国_由快嘴科技提供：kkzui.com12
-      - 英国_由快嘴科技提供：kkzui.com13
-      - 俄罗斯_由快嘴科技提供：kkzui.com14
-      - 美国_由快嘴科技提供：kkzui.com15
-      - 乌克兰_由快嘴科技提供：kkzui.com16
-      - 印度_由快嘴科技提供：kkzui.com17
-      - 丹麦_由快嘴科技提供：kkzui.com18
-      - 荷兰_由快嘴科技提供：kkzui.com19
-      - 美国_由快嘴科技提供：kkzui.com20
-      - 俄罗斯_由快嘴科技提供：kkzui.com21
-      - 美国_由快嘴科技提供：kkzui.com22
-      - 英国_由快嘴科技提供：kkzui.com23
-      - 美国_由快嘴科技提供：kkzui.com24
-      - 中国_由快嘴科技提供：kkzui.com25
-      - 未知_由快嘴科技提供：kkzui.com26
-      - 罗马尼亚_由快嘴科技提供：kkzui.com27
-      - 美国_由快嘴科技提供：kkzui.com28
-      - 中国_由快嘴科技提供：kkzui.com29
-      - 美国_由快嘴科技提供：kkzui.com30
-      - 美国_由快嘴科技提供：kkzui.com31
-      - 新加坡_由快嘴科技提供：kkzui.com32
-      - 新加坡_由快嘴科技提供：kkzui.com33
-      - 新加坡_由快嘴科技提供：kkzui.com34
-      - 新加坡_由快嘴科技提供：kkzui.com35
-      - 丹麦_由快嘴科技提供：kkzui.com36
-      - 俄罗斯_由快嘴科技提供：kkzui.com37
-      - 英国_由快嘴科技提供：kkzui.com38
-      - 英国_由快嘴科技提供：kkzui.com39
-      - 美国_由快嘴科技提供：kkzui.com40
-      - 立陶宛_由快嘴科技提供：kkzui.com41
-      - 美国_由快嘴科技提供：kkzui.com42
-      - 加拿大_由快嘴科技提供：kkzui.com43
-      - 加拿大_由快嘴科技提供：kkzui.com44
-      - 伊朗_由快嘴科技提供：kkzui.com45
-      - 美国_由快嘴科技提供：kkzui.com46
-      - 瑞典_由快嘴科技提供：kkzui.com47
-      - 荷兰_由快嘴科技提供：kkzui.com48
-      - 俄罗斯_由快嘴科技提供：kkzui.com49
-      - 法国_由快嘴科技提供：kkzui.com50
-      - 未知_由快嘴科技提供：kkzui.com51
-      - 未知_由快嘴科技提供：kkzui.com52
-      - 未知_由快嘴科技提供：kkzui.com53
-      - 德国_由快嘴科技提供：kkzui.com54
-      - 荷兰_由快嘴科技提供：kkzui.com55
-      - 荷兰_由快嘴科技提供：kkzui.com56
-      - 新加坡_由快嘴科技提供：kkzui.com57
-      - 乌克兰_由快嘴科技提供：kkzui.com58
-      - 荷兰_由快嘴科技提供：kkzui.com59
-      - 爱尔兰_由快嘴科技提供：kkzui.com60
-      - 加拿大_由快嘴科技提供：kkzui.com61
-      - 德国_由快嘴科技提供：kkzui.com62
-      - 荷兰_由快嘴科技提供：kkzui.com63
-      - 德国_由快嘴科技提供：kkzui.com64
-      - 荷兰_由快嘴科技提供：kkzui.com65
-      - 德国_由快嘴科技提供：kkzui.com66
-      - 荷兰_由快嘴科技提供：kkzui.com67
-      - 德国_由快嘴科技提供：kkzui.com68
-      - 德国_由快嘴科技提供：kkzui.com69
-      - 德国_由快嘴科技提供：kkzui.com70
-      - 德国_由快嘴科技提供：kkzui.com71
-      - 荷兰_由快嘴科技提供：kkzui.com72
-      - 荷兰_由快嘴科技提供：kkzui.com73
-      - 匈牙利_由快嘴科技提供：kkzui.com74
-      - 俄罗斯_由快嘴科技提供：kkzui.com75
-      - 捷克_由快嘴科技提供：kkzui.com76
-      - 英国_由快嘴科技提供：kkzui.com77
-      - 奥地利_由快嘴科技提供：kkzui.com78
-      - 英国_由快嘴科技提供：kkzui.com79
-      - 英国_由快嘴科技提供：kkzui.com80
-      - 未知_由快嘴科技提供：kkzui.com81
-      - 乌克兰_由快嘴科技提供：kkzui.com82
-      - 美国_由快嘴科技提供：kkzui.com83
-      - 荷兰_由快嘴科技提供：kkzui.com84
-      - 美国_由快嘴科技提供：kkzui.com85
-      - 荷兰_由快嘴科技提供：kkzui.com86
-      - 俄罗斯_由快嘴科技提供：kkzui.com87
-      - 俄罗斯_由快嘴科技提供：kkzui.com88
-      - 俄罗斯_由快嘴科技提供：kkzui.com89
-      - 乌克兰_由快嘴科技提供：kkzui.com90
-      - 印度_由快嘴科技提供：kkzui.com91
-      - 美国_由快嘴科技提供：kkzui.com92
-      - 美国_由快嘴科技提供：kkzui.com93
-      - 乌克兰_由快嘴科技提供：kkzui.com94
-      - 意大利_由快嘴科技提供：kkzui.com95
-      - 荷兰_由快嘴科技提供：kkzui.com96
-      - 德国_由快嘴科技提供：kkzui.com97
-      - 美国_由快嘴科技提供：kkzui.com98
-      - 美国_由快嘴科技提供：kkzui.com99
-      - 未知_由快嘴科技提供：kkzui.com100
-      - 未知_由快嘴科技提供：kkzui.com101
-      - 未知_由快嘴科技提供：kkzui.com102
-      - 未知_由快嘴科技提供：kkzui.com103
-      - 德国_由快嘴科技提供：kkzui.com104
-      - 美国_由快嘴科技提供：kkzui.com105
-      - 美国_由快嘴科技提供：kkzui.com106
-      - 荷兰_由快嘴科技提供：kkzui.com107
-      - 美国_由快嘴科技提供：kkzui.com108
-      - 美国_由快嘴科技提供：kkzui.com109
-      - 美国_由快嘴科技提供：kkzui.com110
-      - 美国_由快嘴科技提供：kkzui.com111
-      - 美国_由快嘴科技提供：kkzui.com112
-      - 美国_由快嘴科技提供：kkzui.com113
-      - 美国_由快嘴科技提供：kkzui.com114
-      - 美国_由快嘴科技提供：kkzui.com115
-      - 美国_由快嘴科技提供：kkzui.com116
-      - 美国_由快嘴科技提供：kkzui.com117
-      - 中国_由快嘴科技提供：kkzui.com118
-      - 美国_由快嘴科技提供：kkzui.com119
-      - 比利时_由快嘴科技提供：kkzui.com120
-      - 荷兰_由快嘴科技提供：kkzui.com121
-      - 美国_由快嘴科技提供：kkzui.com122
-      - 美国_由快嘴科技提供：kkzui.com123
-      - 美国_由快嘴科技提供：kkzui.com124
-      - 美国_由快嘴科技提供：kkzui.com125
-      - 美国_由快嘴科技提供：kkzui.com126
-      - 美国_由快嘴科技提供：kkzui.com127
-      - 美国_由快嘴科技提供：kkzui.com128
-      - 美国_由快嘴科技提供：kkzui.com129
-      - 美国_由快嘴科技提供：kkzui.com130
-      - 美国_由快嘴科技提供：kkzui.com131
-      - 美国_由快嘴科技提供：kkzui.com132
-      - 英国_由快嘴科技提供：kkzui.com133
-      - 未知_由快嘴科技提供：kkzui.com134
-      - 美国_由快嘴科技提供：kkzui.com135
-      - 美国_由快嘴科技提供：kkzui.com136
-      - 美国_由快嘴科技提供：kkzui.com137
-      - 美国_由快嘴科技提供：kkzui.com138
-      - 美国_由快嘴科技提供：kkzui.com139
-      - 美国_由快嘴科技提供：kkzui.com140
-      - 美国_由快嘴科技提供：kkzui.com141
-      - 比利时_由快嘴科技提供：kkzui.com142
-      - 美国_由快嘴科技提供：kkzui.com143
-      - 美国_由快嘴科技提供：kkzui.com144
-      - 美国_由快嘴科技提供：kkzui.com145
-      - 美国_由快嘴科技提供：kkzui.com146
-      - 美国_由快嘴科技提供：kkzui.com147
-      - 美国_由快嘴科技提供：kkzui.com148
-      - 美国_由快嘴科技提供：kkzui.com149
-      - 美国_由快嘴科技提供：kkzui.com150
-      - 美国_由快嘴科技提供：kkzui.com151
-      - 美国_由快嘴科技提供：kkzui.com152
-      - 美国_由快嘴科技提供：kkzui.com153
-      - 美国_由快嘴科技提供：kkzui.com154
-      - 未知_由快嘴科技提供：kkzui.com155
-      - 美国_由快嘴科技提供：kkzui.com156
-      - 澳大利亚_由快嘴科技提供：kkzui.com157
+      - US_分享日记_1
+      - US_分享日记_2
+      - US_分享日记_3
+      - US_分享日记_4
+      - US_分享日记_5
+      - US_分享日记_6
+      - US_分享日记_7
+      - US_分享日记_8
+      - US_分享日记_9
+      - US_分享日记_10
+      - US_分享日记_11
+      - US_分享日记_12
+      - US_分享日记_13
+      - US_分享日记_14
+      - US_分享日记_15
+      - CA_分享日记_1
+      - GB_分享日记_1
+      - US_分享日记_16
+      - US_分享日记_17
+      - US_分享日记_18
+      - NL_分享日记_1
+      - US_分享日记_19
+      - US_分享日记_20
+      - KR_分享日记_1
+      - GB_分享日记_2
+      - US_分享日记_21
+      - IR_分享日记_1
+      - CA_分享日记_2
+      - US_分享日记_22
+      - US_分享日记_23
+      - KR_分享日记_2
+      - US_分享日记_24
+      - RU_分享日记_1
+      - CN_分享日记_1
+      - CN_分享日记_2
+      - BE_分享日记
+      - US_分享日记_25
+      - US_分享日记_26
+      - US_分享日记_27
+      - US_分享日记_28
+      - US_分享日记_29
+      - US_分享日记_30
+      - KR_分享日记_3
+      - US_分享日记_31
+      - UA_分享日记_1
+      - KR_分享日记_4
+      - US_分享日记_32
+      - US_分享日记_33
+      - KR_分享日记_5
+      - IN_分享日记_1
+      - GB_分享日记_3
+      - CN_分享日记_3
+      - US_分享日记_34
+      - DE_分享日记_1
+      - US_分享日记_35
+      - US_分享日记_36
+      - GB_分享日记_4
+      - US_分享日记_37
+      - IE_分享日记_1
+      - NL_分享日记_2
+      - US_分享日记_38
+      - US_分享日记_39
+      - IE_分享日记_2
+      - PL_分享日记_1
+      - US_分享日记_40
+      - US_分享日记_41
+      - GB_分享日记_5
+      - IE_分享日记_3
+      - US_分享日记_42
+      - US_分享日记_43
+      - US_分享日记_44
+      - CN_分享日记_4
+      - PL_分享日记_2
+      - CN_分享日记_5
+      - US_分享日记_45
+      - KR_分享日记_6
+      - CN_分享日记_6
+      - US_分享日记_46
+      - US_分享日记_47
+      - CN_分享日记_7
+      - RU_分享日记_2
+      - IE_分享日记_4
+      - IE_分享日记_5
+      - CN_分享日记_8
+      - JP_分享日记
+      - SE_分享日记
+      - KR_分享日记_7
+      - US_分享日记_48
+      - BG_分享日记
+      - US_分享日记_49
+      - RU_分享日记_3
+      - CN_分享日记_9
+      - CN_分享日记_10
+      - CN_分享日记_11
+      - CN_分享日记_12
+      - US_分享日记_50
+      - GB_分享日记_6
+      - AU_分享日记_1
+      - US_分享日记_51
+      - US_分享日记_52
+      - PL_分享日记_3
+      - US_分享日记_53
+      - IE_分享日记_6
+      - CA_分享日记_3
+      - RU_分享日记_4
+      - US_分享日记_54
+      - US_分享日记_55
+      - CZ_分享日记_1
+      - DE_分享日记_2
+      - GB_分享日记_7
+      - US_分享日记_56
+      - US_分享日记_57
+      - US_分享日记_58
+      - US_分享日记_59
+      - CN_分享日记_13
+      - US_分享日记_60
+      - CN_分享日记_14
+      - CA_分享日记_4
+      - unKnow_分享日记
+      - UA_分享日记_2
+      - SG_分享日记
+      - CN_分享日记_15
+      - RU_分享日记_5
+      - US_分享日记_61
+      - CN_分享日记_16
+      - US_分享日记_62
+      - DE_分享日记_3
+      - AT_分享日记_1
+      - US_分享日记_63
+      - US_分享日记_64
+      - DE_分享日记_4
+      - CN_分享日记_17
+      - FR_分享日记_1
+      - CZ_分享日记_2
+      - CN_分享日记_18
+      - IT_分享日记
+      - RU_分享日记_6
+      - RU_分享日记_7
+      - US_分享日记_65
+      - CZ_分享日记_3
+      - DE_分享日记_5
+      - US_分享日记_66
+      - US_分享日记_67
+      - US_分享日记_68
+      - CN_分享日记_19
+      - DE_分享日记_6
+      - IR_分享日记_2
+      - US_分享日记_69
+      - IN_分享日记_2
+      - US_分享日记_70
+      - KZ_分享日记
+      - LT_分享日记
+      - NL_分享日记_3
+      - FR_分享日记_2
+      - UA_分享日记_3
+      - DE_分享日记_7
+      - NL_分享日记_4
+      - GB_分享日记_8
+      - NL_分享日记_5
+      - GB_分享日记_9
+      - IS_分享日记
+      - US_分享日记_71
+      - CZ_分享日记_4
+      - US_分享日记_72
+      - NL_分享日记_6
+      - KR_分享日记_8
+      - US_分享日记_73
+      - FR_分享日记_3
+      - US_分享日记_74
+      - ES_分享日记
+      - CZ_分享日记_5
+      - US_分享日记_75
+      - AT_分享日记_2
+      - US_分享日记_76
+      - US_分享日记_77
+      - UA_分享日记_4
+      - US_分享日记_78
+      - CZ_分享日记_6
+      - US_分享日记_79
+      - CN_分享日记_20
+      - DE_分享日记_8
+      - NL_分享日记_7
+      - NL_分享日记_8
+      - NL_分享日记_9
+      - NL_分享日记_10
+      - NL_分享日记_11
+      - NL_分享日记_12
+      - NL_分享日记_13
+      - NL_分享日记_14
+      - NL_分享日记_15
+      - NL_分享日记_16
+      - NL_分享日记_17
+      - NL_分享日记_18
+      - NL_分享日记_19
+      - NL_分享日记_20
+      - NL_分享日记_21
+      - NL_分享日记_22
+      - NL_分享日记_23
+      - NL_分享日记_24
+      - NL_分享日记_25
+      - NL_分享日记_26
+      - NL_分享日记_27
+      - NL_分享日记_28
+      - NL_分享日记_29
+      - NL_分享日记_30
+      - US_分享日记_80
+      - NL_分享日记_31
+      - NL_分享日记_32
+      - NL_分享日记_33
+      - US_分享日记_81
+      - US_分享日记_82
+      - NL_分享日记_34
+      - US_分享日记_83
+      - DE_分享日记_9
+      - NL_分享日记_35
+      - NL_分享日记_36
+      - US_分享日记_84
+      - US_分享日记_85
+      - NL_分享日记_37
+      - NL_分享日记_38
+      - US_分享日记_86
+      - AU_分享日记_2
+      - CN_分享日记_21
+      - AU_分享日记_3
+      - CN_分享日记_22
+      - CN_分享日记_23
+      - CN_分享日记_24
+      - US_分享日记_87
+
 rules:
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# 本地/局域网地址
+# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
-  - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
@@ -2914,7 +1992,6 @@ rules:
   - DOMAIN,instant.arubanetworks.com,🎯 全球直连
   - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
-  - DOMAIN,www.asusrouter.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
   - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -2927,16 +2004,23 @@ rules:
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
+# 广告关键词
+# 广告联盟-国内****************
+# 广告联盟-国外****************
+# 垃圾站点****************
+# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
   - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
+  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
   - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
   - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
   - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
   - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
   - DOMAIN-KEYWORD,adwords,🛑 全球拦截
+  - DOMAIN-KEYWORD,analysis,🛑 全球拦截
   - DOMAIN-KEYWORD,applovin,🛑 全球拦截
   - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
   - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -2950,6 +2034,7 @@ rules:
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
   - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
+  - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
@@ -3346,7 +2431,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -3520,6 +2604,66 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
+# 包含常用应用的各种去广告规则。
+# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
+# 163
+# 17173
+# 178
+# 2345
+# 360
+# 58
+# Alibaba
+# Adobe
+# Apple
+# AutoHome
+# Baidu
+# Book-app 起点 掌阅 书旗 宜搜
+# ByteDance 头条抖音
+# Dangdang
+# Duomi
+# Facebook
+# Fang
+# Google
+# JD
+# Kugou
+# Kuwo
+# Meizu flyme 魅族
+# Meitu
+# Miui 小米
+# Moji
+# Qingting.fm
+# QQ
+# RenRen
+# Sina
+# Sougou
+# Teleplus
+# Twitter
+# UC ali
+# Weifeng
+# WPS Office
+# Wi-Fi key
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷app&看看
+# Yahoo
+# Zhihu
+# Ads in Video apps 下面都是 ********************
+# 6间房
+# Baofeng 暴风影音
+# Douyu
+# Fenghuang 凤凰TV
+# Funshion 风行
+# iqiyi PPS 爱奇艺
+# Ku6 酷6
+# LeTV 乐视
+# MGTV 芒果TV
+# Sohu 搜狐
+# PPTV、PPLive
+# QQ Live
+# Youku & Tudou
+# Youtube
+# Others ads in Video apps
+# Ads in Video apps end 上面都是 ********************
+# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -3684,6 +2828,7 @@ rules:
   - DOMAIN-SUFFIX,baidu9635.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidutv.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
@@ -4041,6 +3186,7 @@ rules:
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,xmpush.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -4235,6 +3381,7 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,union.6.cn,🍃 应用净化
@@ -4543,6 +3690,8 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+# Google China
+#DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -4554,24 +3703,34 @@ rules:
   - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
+  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
+  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
+  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
   - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
+# 内容：SteamCN
+# 数量：15条
   - DOMAIN,csgo.wmsj.cn,🎯 全球直连
   - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
   - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
@@ -4583,11 +3742,13 @@ rules:
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
   - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+# Microsoft Services
+# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
+# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -4600,11 +3761,8 @@ rules:
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
@@ -4667,11 +3825,12 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+# Apple
+# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
@@ -4696,13 +3855,64 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+# 内容：国外媒体列表
+# 更新：2023-01-15 22:06:33
+# 数量：330条
+# ABC
+# AbemaTV
+# All4
+# Amazon
+# AppleNews
+# AppleTV
+# BBCiPlayer
+# Bahamut
+# DAZN
+# Deezer
+# DiscoveryPlus
+# DisneyPlus
+# EncoreTVB
+# FoxNow
+# HBO
+# HBO_GO_HKG
+# HWTV
+# Hulu
+# HuluJapan
+# ITV
+# JOOX
+# Japonx
+# KKBOX
+# KKTV
+# LiTV
+# LineTV
+# My5
+# MyTVSuper
+# Netflix
+# Niconico
+# PBS
+# Pandora
+# Pornhub
+# Qobuz
+# SoundCloud
+# Spotify
+# TIDAL
+# TaiWanGood 台湾好
+# TikTok
+# Twitch
+# ViuTV
+# YouTube
+# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
+#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
+#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -4720,17 +3930,18 @@ rules:
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
   - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
+#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#   - USER-AGENT,AppleNews*,🌍 国外媒体
+#   - USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
+#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -4745,11 +3956,13 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
+#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -4761,11 +3974,14 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+#   - USER-AGENT,Disney*,🌍 国外媒体
+#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -4786,19 +4002,25 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
+#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
+#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
+#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
+  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -4818,6 +4040,7 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
+#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -4833,9 +4056,12 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
+#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+#   - USER-AGENT,JOOX*,🌍 国外媒体
+#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -4851,25 +4077,32 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
+#   - USER-AGENT,KKTV*,🌍 国外媒体
+#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
+#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
+#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
+#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -4907,60 +4140,27 @@ rules:
   - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
   - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
+#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
-  - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
-  - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
+#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
+#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+#   - USER-AGENT,Spotify*,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
   - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
@@ -4968,12 +4168,15 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
+#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
+#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+#   - USER-AGENT,TikTok*,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -4990,6 +4193,7 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -5005,6 +4209,9 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
+#   - USER-AGENT,*youtube*,🌍 国外媒体
+#   - USER-AGENT,YouTube*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -5019,7 +4226,14 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
+# Telegram
+#PROCESS-NAME,Telegram.exe
+#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -5032,10 +4246,48 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+# 长风网站，自动注入
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
+  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
+# 代理列表
+# MyList && Other
+# 国外域名
+# 国外域名关键字
+# Top Blocked Sites
+# Amazon
+# BBC
+# Developer 开发者常用国外网站、镜像和论坛
+# Discord
+# Facebook
+# Github
+# Google
+# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
+# Instagram
+# Kakao Talk
+# Line
+# OneDrive
+#DOMAIN-SUFFIX,aria.microsoft.com
+# Porn
+# Pixiv
+# Spark
+# Steam
+# TapTap
+# Twitch
+# Twitter
+# Telegram
+# TeraBox
+# Whatsapp
+# Wikipedia 维基相关域名
+#飞流直播
+#华文电视
+# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -5046,13 +4298,13 @@ rules:
   - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -5060,6 +4312,7 @@ rules:
   - DOMAIN-SUFFIX,sg,🚀 节点选择
   - DOMAIN-SUFFIX,tw,🚀 节点选择
   - DOMAIN-SUFFIX,uk,🚀 节点选择
+  - DOMAIN-SUFFIX,us,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -5210,11 +4463,8 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -5329,8 +4579,6 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -5368,7 +4616,6 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
-  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -5387,6 +4634,7 @@ rules:
   - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
   - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
@@ -5443,14 +4691,59 @@ rules:
   - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
   - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
   - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
-  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
-  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
   - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
+# 直连列表
+# MyList
+# CN域名直连(中国|公司|网络)
+# 中国国内常见域名关键词直连
+# 360
+# 4399
+# 58
+# Alibaba
+# Baidu
+# Bilibili
+# Blizzard
+# ByteDance
+# CCTV
+# ChinaNet
+# DiDi
+# Douyu 斗鱼
+# Epic
+# HuaWei
+# Iflytek 科大讯飞
+# Iqiyi
+# JD
+# Kingsoft
+# Kuaishou 快手
+# Meitu
+# LeTV 乐视
+# MGTV 芒果TV
+# MI
+# NetEase
+# PPTV、PPLive
+# PDD 拼多多
+# Sina
+# Sohu Sogo
+# Sony
+# SteamCN
+# Tencent
+# Vip 唯品会
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷
+# YYeTs 人人影视
+# Private Tracker
+# TeamViewer
+# Public Direct CDN 公共直连
+#DOMAIN-SUFFIX,ajax.aspnetcdn.com
+#DOMAIN-SUFFIX,ajax.cloudflare.com
+#DOMAIN-SUFFIX,cdnjs.cloudflare.com
+#DOMAIN-SUFFIX,code.jquery.com
+# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -5466,12 +4759,11 @@ rules:
   - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
-  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
-  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
   - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
   - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
   - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
   - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -5518,7 +4810,6 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
-  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -5558,8 +4849,6 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
-  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -5567,6 +4856,9 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,im9.com,🎯 全球直连
   - DOMAIN-SUFFIX,smtcdns.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
+  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
   - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
@@ -5581,7 +4873,6 @@ rules:
   - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyincdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
@@ -5630,25 +4921,12 @@ rules:
   - DOMAIN-SUFFIX,dbankcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hc-cdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hihonor.com,🎯 全球直连
   - DOMAIN-SUFFIX,huawei.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweicloud.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweishop.net,🎯 全球直连
   - DOMAIN-SUFFIX,hwccpc.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmallres.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawnfs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawno.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawntech.com,🎯 全球直连
-  - DOMAIN-SUFFIX,coloros.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytap.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapcs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapdownload.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapimage.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapmobi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppoer.me,🎯 全球直连
-  - DOMAIN-SUFFIX,oppomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyink.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyrec.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
@@ -5748,7 +5026,6 @@ rules:
   - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
   - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
   - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
@@ -5800,7 +5077,46 @@ rules:
   - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
+  - DOMAIN-KEYWORD,announce,🎯 全球直连
+  - DOMAIN-KEYWORD,torrent,🎯 全球直连
+  - DOMAIN-KEYWORD,tracker,🎯 全球直连
+  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,animetorrents.me,🎯 全球直连
+  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,beitai.pt,🎯 全球直连
+  - DOMAIN-SUFFIX,bittorrent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
+  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
+  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
+  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
+  - DOMAIN-SUFFIX,hd4fans.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
+  - DOMAIN-SUFFIX,hdtime.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdzone.me,🎯 全球直连
+  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
+  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
+  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
+  - DOMAIN-SUFFIX,leaguehd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
+  - DOMAIN-SUFFIX,msg.vg,🎯 全球直连
+  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,open.cd,🎯 全球直连
+  - DOMAIN-SUFFIX,ourbits.club,🎯 全球直连
+  - DOMAIN-SUFFIX,passthepopcorn.me,🎯 全球直连
+  - DOMAIN-SUFFIX,privatehd.to,🎯 全球直连
+  - DOMAIN-SUFFIX,pthome.net,🎯 全球直连
+  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
+  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
+  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
+  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
   - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
+  - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
   - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
@@ -5814,10 +5130,6 @@ rules:
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.pub,🎯 全球直连
-  - DOMAIN-SUFFIX,dns.alidns.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.360.cn,🎯 全球直连
-  - IP-CIDR,1.12.12.12/32,🎯 全球直连,no-resolve
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
   - DOMAIN-SUFFIX,115.com,🎯 全球直连
   - DOMAIN-SUFFIX,12306.com,🎯 全球直连
@@ -5847,7 +5159,6 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -5883,7 +5194,6 @@ rules:
   - DOMAIN-SUFFIX,eastday.com,🎯 全球直连
   - DOMAIN-SUFFIX,eastmoney.com,🎯 全球直连
   - DOMAIN-SUFFIX,ecitic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,element-plus.org,🎯 全球直连
   - DOMAIN-SUFFIX,ewqcxz.com,🎯 全球直连
   - DOMAIN-SUFFIX,fang.com,🎯 全球直连
   - DOMAIN-SUFFIX,fantasy.tv,🎯 全球直连
@@ -5962,7 +5272,6 @@ rules:
   - DOMAIN-SUFFIX,nruan.com,🎯 全球直连
   - DOMAIN-SUFFIX,nuomi.com,🎯 全球直连
   - DOMAIN-SUFFIX,onedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,oneplus.com,🎯 全球直连
   - DOMAIN-SUFFIX,onlinedown.net,🎯 全球直连
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
@@ -5985,7 +5294,6 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,realme.com,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
@@ -6019,7 +5327,6 @@ rules:
   - DOMAIN-SUFFIX,upyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,uxengine.net,🎯 全球直连
   - DOMAIN-SUFFIX,videocc.net,🎯 全球直连
-  - DOMAIN-SUFFIX,vivo.com,🎯 全球直连
   - DOMAIN-SUFFIX,wandoujia.com,🎯 全球直连
   - DOMAIN-SUFFIX,weather.com,🎯 全球直连
   - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
@@ -6056,9 +5363,15 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+# 中国云服务商ip端
+# 阿里
+# 腾讯 qq
+# 百度 Baidu
+# 华为 huwei
+# 网易 NetEase
+# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
